@@ -107,6 +107,15 @@ body {
   background-size: 50%;
 }
 
+/* Brand logo styles */
+.brand-logo {
+  width: 70%;
+  margin: auto;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
 /* Responsive section styles */
 @media only screen and (max-width: 576px) {
   .nav {
@@ -152,6 +161,15 @@ body {
     height: 60%;
     background-size: 100%;
   }
+  /* Brand  */
+  .brand-logo {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .brand-logo img {
+    width: 33.38px;
+    height: 18.84px;
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 992px) {
@@ -166,6 +184,9 @@ body {
     display: none;
   }
   /* banner */
+  .banner-section {
+    height: 40vh;
+  }
   .banner-title {
     font-weight: 700;
     font-size: 28px;
@@ -180,5 +201,16 @@ body {
   .banner-img {
     gap: 20px;
     background-size: 70%;
+  }
+  /* Brand */
+  .brand-logo {
+    margin-top: 20px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .m-logo {
+    margin-left: 50px;
+  }
+  .brand-logo img {
+    margin-bottom: 20px;
   }
 }
